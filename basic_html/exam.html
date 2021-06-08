@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<h1><a href="style2.css">Login New Membership</a></h1><p></p>
+<from>
+    <tr><td>아이디:</td>
+    <td><input type="text" size=20 maxlength=20 name=id id=ID></td></tr>
+    <p></p>
+    <tr><td> 패스워드:</td>
+    <td><input type="password" name=password id=password></td></tr>
+    <p></p>
+    <tr><td>패스워드확인:</td>
+        <td><input type="password" name=c_password id=c_password></td></tr>
+        <p></p>
+    <tr><td>이름:</td><td><input type="text" name=name></td></tr>
+    <p></p>
+    <tr><td>닉네임:</td><td><input type="text" name=nickname></td></tr>
+    <p></p>
+    <tr>
+    <td>이메일:</td><td><input type="email" name=email>@ <select name="이메일">
+        <option value="직접입력">직접입력</option>
+        <option value="네이버">naver.com</option>
+        <option value="다음">daum.net</option>
+        <option value="지메일">gmail.com</option>
+       </select>
+     </td></tr>
+    </from>
+
+<p></p>
+<tr><td>이메일수신 : 
+    <input type="radio" name="chk_info" value="수신"> 수신
+    <input type="radio" name="chk_info" value="미수신"> 미수신
+</td></tr>
+<p></p>
+<tr><td>SMS수신 :
+    <input type="radio" name="chk_info2" value="수신"> 수신
+    <input type="radio" name="chk_info2" value="미수신"> 미수신
+    </td></tr>
+    <p></p>
+
+    연락처<br>
+    <form>
+        <select name="010">
+            <option value="010">010</option>
+            <option value="019">019</option>
+            <option value="017">017</option>
+        </select>-<input type="text" name=number>-<input type="text" name=number></form>
+        <br>
+        취미(1개이상 선택) :
+        <input type="checkbox" name="chk_info" value="음악"> 음악
+        <input type="checkbox" name="chk_info" value="독서"> 독서
+        <input type="checkbox" name="chk_info" value="여행"> 여행
+        <input type="checkbox" name="chk_info" value="낚시"> 낚시<br>
+        <p></p>성별 :
+        <input type="radio" name="chk_info3" value="남"> 남 
+        <input type="radio" name="chk_info3" value="여"> 여<br>
+<p></p>
+    <button type="submit" class="btn btn-info">login</button>
+    <button type="button" class="btn btn-info">rest</button><br>
+</form>
+</body> 
+</head>
+</html>
+   
