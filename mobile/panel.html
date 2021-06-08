@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #panel {
+            background-color: lightgray;
+            width: 300px;
+            height: 100%;
+            left: -300px;
+            position: fixed;
+        }
+    </style>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+    
+        $(document).ready(function() {
+        $('#btn').click(function() {
+        $('#panel').css('left', 0);
+        })
+        });
+    /*
+        function panel() {
+            document.getElementById("panel").style.left = 0;
+        }
+    */
+    </script>
+
+</head>
+
+<body>
+    <div id=panel> </div>
+    <!--<button id=btn onclick=panel()>panel</button>-->
+    <button id=btn>panel</button>
+
+
+</body>
+
+</html>
