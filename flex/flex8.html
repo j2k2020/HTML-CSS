@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #333338;
+            font-family: Georgia, serif;
+            font-size: 16px;
+            color:#444;
+        }
+        .container{
+            display: flex;                  
+        }
+        .main-content, .sidebar{
+            background-color: #eee;
+            padding: 6px;
+            margin: 10px;
+        }
+        .panel{
+            background-color: white;
+            padding: 20px;
+            margin: 10px;        
+        }  
+        .main-content{
+            flex:2; /* 비율 */
+        }
+        .sidebar{
+            flex:1;
+        }            
+    </style>
+</head>
+<body>   
+    <div class="container">
+        <section class="main-content">
+            <div class="panel">
+                <h1>Main Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus ex dolore, tenetur assumenda maxime quos nobis, nulla eius illum veritatis natus minus doloremque tempora quasi modi mollitia excepturi iure.</p>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/laptop001.jpg" alt="">
+                <h3>Sub Title</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quis, modi eius, sit veritatis ut obcaecati magnam sunt est, quidem rerum. Dolorem, exercitationem corporis ut totam, velit nam doloremque, maiores laudantium necessitatibus pariatur beatae obcaecati sit? Reiciendis minima dolores magni, numquam ab quis id cumque corrupti deserunt, labore maiores, quod necessitatibus accusantium aliquid rem. Consequuntur natus blanditiis nemo eum eveniet at quo, nam corporis mollitia dolorem, ipsa voluptate eius dignissimos, sunt cum facilis? Iusto, aperiam adipisci, nostrum voluptatem beatae odit labore impedit, quod voluptates facere molestiae in accusamus provident explicabo est animi veniam. Laboriosam, soluta fuga sunt eum aliquam quam!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quis, modi eius, sit veritatis ut obcaecati magnam sunt est, quidem rerum. Dolorem, exercitationem corporis ut totam, velit nam doloremque, maiores laudantium necessitatibus pariatur beatae obcaecati sit? Reiciendis minima dolores magni, numquam ab quis id cumque corrupti deserunt, labore maiores, quod necessitatibus accusantium aliquid rem. Consequuntur natus blanditiis nemo eum eveniet at quo, nam corporis mollitia dolorem, ipsa voluptate eius dignissimos, sunt cum facilis? Iusto, aperiam adipisci, nostrum voluptatem beatae odit labore impedit, quod voluptates facere molestiae in accusamus provident explicabo est animi veniam. Laboriosam, soluta fuga sunt eum aliquam quam!</p>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <div class="panel">
+                <h3>Item 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="panel">
+                <h3>Item 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit laborum, ab omnis praesentium aperiam nam.</p>
+            </div>
+            <div class="panel">
+                <h3>Item 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit laborum, ab omnis praesentium aperiam nam.</p>
+            </div>
+            <div class="panel">
+                <h3>Item 4</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
