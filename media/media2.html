@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Open Sans";
+            background-color: #ecf0f1;
+        }
+        .container{
+            max-width: 60rem;
+            width: 100%;
+            margin: 2rem auto;
+        }
+        .flexbg{
+            display: flex;
+        }
+        .flexbg main{           
+            order: 2;
+            background-color: white;
+            padding: 25px;
+        }
+        .flexbg .sidebar{
+            width: 20%;
+            padding: 25px;
+            color: white;
+        }
+        .flexbg .left{
+            order: 1;
+            background-color: #3498db;
+        }
+        .flexbg .right{
+            order: 3;
+            background-color: #34495e;
+        }
+        /* 태블릿 화면 */
+        @media screen and (max-width: 768px){
+            .flexbg{
+                flex-wrap: wrap;
+            }
+            .flexbg main{
+                width: 100%;
+                order: 1;
+            }
+            .flexbg .sidebar{
+                width: 50%;
+            }
+            .flexbg .left{
+                order: 2;
+            }
+            .flexbg .right{
+                order: 3;
+            }
+        }
+        /* 모바일 화면 */
+        @media screen and (max-width: 480px){
+            .flexbg .sidebar{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container flexbg">
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem similique mollitia, aliquid quis ea eos perspiciatis laboriosam cum quas laborum molestiae impedit corrupti quidem numquam dolor veritatis vel facilis minus minima vero facere maxime? Id, fugiat impedit labore veritatis eos qui quae commodi, ipsam odio tempora, aliquid itaque omnis aliquam! Similique maiores tempora natus, perspiciatis voluptates iure fugit culpa esse labore dolorum sapiente blanditiis corrupti hic accusamus obcaecati excepturi iusto reprehenderit doloremque. Cum quaerat laudantium mollitia ratione commodi maiores tempora sint impedit temporibus iusto error ipsam consequatur minus nisi quod, tenetur eius ipsum quisquam vero. Asperiores ratione voluptatum nemo sequi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia debitis temporibus libero tenetur neque ratione iusto impedit consequuntur nihil aut sapiente porro optio nam repudiandae sequi eius, vitae, magni nemo corporis dolorem. Atque odio minima corporis pariatur enim reprehenderit provident quidem, unde est, quae repellat culpa sint animi reiciendis ea, odit possimus sequi amet fuga rerum officia perspiciatis fugiat natus aperiam! Aperiam, laboriosam. Assumenda facilis et tenetur perferendis adipisci alias maiores, distinctio mollitia culpa odit ipsa nisi facere totam recusandae atque nam. Blanditiis dicta perferendis cupiditate quam quidem consequuntur eum necessitatibus inventore ex asperiores iure, facilis magni nemo molestiae.</p>
+        </main>
+        <aside class="sidebar left">
+            <p>You might have some latest posts here on the left</p>
+        </aside>
+        <aside class="sidebar right">
+            <p>You might have some latest posts here on the right</p>
+        </aside>
+    </div>
+</body>
+</html>
